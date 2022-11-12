@@ -38,5 +38,11 @@ namespace Desafio1
                 }
             }
         }
+        public string Llamar() {
+            return "Realizando llamada...";
+        }
+        public string Llamar(string contacto) {
+            return "LLamando a " + contacto;
+        }
     }
 }
