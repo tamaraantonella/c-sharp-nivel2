@@ -20,6 +20,12 @@ namespace Desafio1
             //getter
             int value= tamara.CodigoOperador;
             Console.WriteLine(value);
+
+            Contacto maby = new Contacto();
+            maby.Nombre = "Maby";
+            maby.Apellido = "Gonzalez";
+            maby.Direccion = "Calle 1";
+            Console.WriteLine(maby.MostrarContacto());
         }
     }
 }
