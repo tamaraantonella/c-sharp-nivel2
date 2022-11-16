@@ -28,13 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Ingresar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Ingresar
+            // 
+            this.Ingresar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Ingresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Ingresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Ingresar.Location = new System.Drawing.Point(353, 186);
+            this.Ingresar.Name = "Ingresar";
+            this.Ingresar.Size = new System.Drawing.Size(80, 39);
+            this.Ingresar.TabIndex = 0;
+            this.Ingresar.Text = "Ingresar";
+            this.Ingresar.UseVisualStyleBackColor = false;
+            this.Ingresar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Ingresar);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Ingresar;
     }
 }
 

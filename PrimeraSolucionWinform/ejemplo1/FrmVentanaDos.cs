@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ejemplo1
 {
-    public partial class Form2 : Form
+    public partial class FrmVentanaDos : Form
     {
-        public Form2()
+        //constructor
+        public FrmVentanaDos()
         {
+            //función que inicializa los componentes
             InitializeComponent();
+        }
+
+        private void FrmVentanaDos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
