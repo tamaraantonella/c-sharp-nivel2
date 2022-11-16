@@ -24,20 +24,19 @@ namespace ejemplo1
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string texto = textNombre.Text;
-            saludarLabel.Text = "Hola " + texto;
+            string ciudad = textUbicacion.Text;
+            saludarLabel.Text = "Hola " + texto + " que bueno que nos visites desde " + ciudad;
+        }
+
+        private void btnAddPets_Click(object sender, EventArgs e)
+        {
+            string pet = tbPets.Text;
+            listViewPets.Items.Add(pet);
         }
     }
 }
