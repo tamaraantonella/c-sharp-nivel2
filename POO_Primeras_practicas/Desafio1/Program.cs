@@ -26,6 +26,7 @@ namespace Desafio1
             maby.Apellido = "Gonzalez";
             maby.Direccion = "Calle 1";
             Console.WriteLine(maby.MostrarContacto());
+            
         }
     }
 }
