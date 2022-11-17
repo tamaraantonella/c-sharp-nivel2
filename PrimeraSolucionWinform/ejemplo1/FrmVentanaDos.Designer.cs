@@ -193,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 623);
+            this.ClientSize = new System.Drawing.Size(911, 623);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.checkVet);
             this.Controls.Add(this.fechaNacimiento);
@@ -210,6 +210,8 @@
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.MaximumSize = new System.Drawing.Size(927, 662);
+            this.MinimumSize = new System.Drawing.Size(507, 662);
             this.Name = "FrmVentanaDos";
             this.Text = "Mi perfil";
             this.Load += new System.EventHandler(this.FrmVentanaDos_Load);
