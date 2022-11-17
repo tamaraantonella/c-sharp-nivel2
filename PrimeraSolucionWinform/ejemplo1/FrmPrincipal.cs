@@ -16,5 +16,14 @@ namespace ejemplo1
         {
             InitializeComponent();
         }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVentanaDos perfil = new FrmVentanaDos();
+            //aca puedo tocar ambas ventanas
+            //perfil.Show();
+            //este me permite si o si trabajar en una sola ventana
+            perfil.ShowDialog();
+        }
     }
 }
