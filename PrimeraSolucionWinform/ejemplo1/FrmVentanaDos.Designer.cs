@@ -49,7 +49,7 @@
             this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(33, 469);
+            this.button1.Location = new System.Drawing.Point(29, 499);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 74);
@@ -71,10 +71,12 @@
             // 
             // textNombre
             // 
+            this.textNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textNombre.Location = new System.Drawing.Point(154, 107);
             this.textNombre.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(266, 26);
+            this.textNombre.Size = new System.Drawing.Size(265, 26);
             this.textNombre.TabIndex = 2;
             // 
             // saludarLabel
@@ -100,29 +102,34 @@
             // 
             // textUbicacion
             // 
+            this.textUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textUbicacion.Location = new System.Drawing.Point(154, 143);
             this.textUbicacion.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textUbicacion.Name = "textUbicacion";
-            this.textUbicacion.Size = new System.Drawing.Size(266, 26);
+            this.textUbicacion.Size = new System.Drawing.Size(264, 26);
             this.textUbicacion.TabIndex = 5;
             // 
             // listViewPets
             // 
+            this.listViewPets.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listViewPets.HideSelection = false;
-            this.listViewPets.Location = new System.Drawing.Point(33, 336);
+            this.listViewPets.Location = new System.Drawing.Point(29, 381);
             this.listViewPets.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.listViewPets.Name = "listViewPets";
-            this.listViewPets.Size = new System.Drawing.Size(255, 101);
+            this.listViewPets.Size = new System.Drawing.Size(253, 101);
             this.listViewPets.TabIndex = 6;
             this.listViewPets.UseCompatibleStateImageBehavior = false;
             this.listViewPets.View = System.Windows.Forms.View.List;
             // 
             // btnAddPets
             // 
-            this.btnAddPets.Location = new System.Drawing.Point(187, 296);
+            this.btnAddPets.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddPets.Location = new System.Drawing.Point(186, 343);
             this.btnAddPets.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnAddPets.Name = "btnAddPets";
-            this.btnAddPets.Size = new System.Drawing.Size(101, 32);
+            this.btnAddPets.Size = new System.Drawing.Size(96, 28);
             this.btnAddPets.TabIndex = 7;
             this.btnAddPets.Text = "Agregar";
             this.btnAddPets.UseVisualStyleBackColor = true;
@@ -132,7 +139,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 280);
+            this.label2.Location = new System.Drawing.Point(31, 312);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 18);
@@ -141,10 +148,12 @@
             // 
             // tbPets
             // 
-            this.tbPets.Location = new System.Drawing.Point(33, 302);
+            this.tbPets.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbPets.Location = new System.Drawing.Point(34, 345);
             this.tbPets.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbPets.Name = "tbPets";
-            this.tbPets.Size = new System.Drawing.Size(132, 26);
+            this.tbPets.Size = new System.Drawing.Size(130, 26);
             this.tbPets.TabIndex = 9;
             // 
             // label3
@@ -159,10 +168,12 @@
             // 
             // fechaNacimiento
             // 
+            this.fechaNacimiento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.fechaNacimiento.Location = new System.Drawing.Point(154, 182);
             this.fechaNacimiento.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.fechaNacimiento.Name = "fechaNacimiento";
-            this.fechaNacimiento.Size = new System.Drawing.Size(266, 26);
+            this.fechaNacimiento.Size = new System.Drawing.Size(264, 26);
             this.fechaNacimiento.TabIndex = 11;
             // 
             // checkVet
@@ -193,7 +204,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 623);
+            this.ClientSize = new System.Drawing.Size(491, 623);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.checkVet);
             this.Controls.Add(this.fechaNacimiento);
