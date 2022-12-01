@@ -19,11 +19,26 @@ namespace ejemplo1
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //evaluo si ya esta abierta la ventada del form perfil
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FrmVentanaDos))
+                {
+                    MessageBox.Show("La ventana ya esta abierta");
+                    return;
+                }
+            }
             FrmVentanaDos perfil = new FrmVentanaDos();
+            perfil.MdiParent = this;
             //aca puedo tocar ambas ventanas
             //perfil.Show();
             //este me permite si o si trabajar en una sola ventana
-            perfil.ShowDialog();
+            perfil.Show();
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
