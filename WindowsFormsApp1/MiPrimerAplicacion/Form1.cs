@@ -29,8 +29,13 @@ namespace MiPrimerAplicacion
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola ");
-            this.BackColor = Color.Blue;
+            
+            //MessageBox.Show("Hola ");
+            //this.BackColor = Color.Blue;
+            if(textLastName.Text == "")
+                textLastName.BackColor = Color.Red;
+            else
+                textLastName.BackColor = System.Drawing.SystemColors.Control;
         }
 
         private void Formulario_Click(object sender, EventArgs e)
@@ -59,6 +64,12 @@ namespace MiPrimerAplicacion
         {
             labelForm.BackColor = System.Drawing.SystemColors.Control;
             labelForm.Cursor = Cursors.Arrow;
+        }
+
+        private void textLastName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < 48 || e.KeyChar > 59) && e.KeyChar != 8)
+                e.Handled = true;
         }
     }
 }
