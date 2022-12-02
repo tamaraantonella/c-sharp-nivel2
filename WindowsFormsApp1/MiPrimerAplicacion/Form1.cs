@@ -26,5 +26,11 @@ namespace MiPrimerAplicacion
         {
             MessageBox.Show("Gracias por usar C#");
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola ");
+            this.BackColor = Color.Blue;
+        }
     }
 }

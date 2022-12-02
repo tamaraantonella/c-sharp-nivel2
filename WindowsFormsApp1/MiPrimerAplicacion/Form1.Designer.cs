@@ -28,16 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BackColor = System.Drawing.SystemColors.Window;
+            this.btnSubmit.Enabled = false;
+            this.btnSubmit.Location = new System.Drawing.Point(325, 292);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(119, 37);
+            this.btnSubmit.TabIndex = 0;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuText;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSubmit);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Formulario";
+            this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -48,6 +64,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnSubmit;
     }
 }
 
