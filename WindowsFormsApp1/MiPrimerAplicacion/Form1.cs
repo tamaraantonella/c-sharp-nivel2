@@ -32,5 +32,33 @@ namespace MiPrimerAplicacion
             MessageBox.Show("Hola ");
             this.BackColor = Color.Blue;
         }
+
+        private void Formulario_Click(object sender, EventArgs e)
+        {
+            //este evento se ejecuta cuando se hace click en el formulario
+            //y determina la posicion del mouse
+            MouseEventArgs click = (MouseEventArgs)e;
+            if (click.Button == MouseButtons.Left)
+                MessageBox.Show("Click izquierdo");
+            else if (click.Button == MouseButtons.Right)
+                MessageBox.Show("Click derecho");
+            else if (click.Button == MouseButtons.Middle)
+                MessageBox.Show("Click central");
+            else
+                MessageBox.Show("Click no identificado");
+
+        }
+
+        private void labelForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelForm.BackColor = Color.Cyan;
+            labelForm.Cursor = Cursors.Hand;
+        }
+
+        private void labelForm_MouseLeave(object sender, EventArgs e)
+        {
+            labelForm.BackColor = System.Drawing.SystemColors.Control;
+            labelForm.Cursor = Cursors.Arrow;
+        }
     }
 }

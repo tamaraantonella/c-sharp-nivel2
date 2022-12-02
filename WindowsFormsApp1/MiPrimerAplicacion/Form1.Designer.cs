@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.labelForm = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSubmit
@@ -43,29 +44,47 @@
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // labelForm
+            // 
+            this.labelForm.AutoSize = true;
+            this.labelForm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelForm.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelForm.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.labelForm.Location = new System.Drawing.Point(358, 263);
+            this.labelForm.Name = "labelForm";
+            this.labelForm.Size = new System.Drawing.Size(56, 19);
+            this.labelForm.TabIndex = 1;
+            this.labelForm.Text = "Etiqueta";
+            this.labelForm.MouseLeave += new System.EventHandler(this.labelForm_MouseLeave);
+            this.labelForm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelForm_MouseMove);
+            // 
             // Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelForm);
             this.Controls.Add(this.btnSubmit);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Formulario";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Formulario_FormClosing);
             this.Load += new System.EventHandler(this.Formulario_Load);
+            this.Click += new System.EventHandler(this.Formulario_Click);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label labelForm;
     }
 }
 
